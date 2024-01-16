@@ -25,8 +25,8 @@ Listed All available Open source
   - https://github.com/thaitype/npm-typescript-boilerplate
   - https://github.com/thaitype/simple-typescript-boilerplate
 - Nammatham
-- https://github.com/thaitype/nammatham-v2-azure-functions-starter
-- https://github.com/thaitype/nammatham-v2-azure-functions-file-share-example
+  - https://github.com/thaitype/nammatham-v2-azure-functions-starter
+  - https://github.com/thaitype/nammatham-v2-azure-functions-file-share-example
 
 ## In Development Projects
 
