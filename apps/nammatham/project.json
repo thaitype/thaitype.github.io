@@ -1,0 +1,8 @@
+{
+  "name": "nammatham",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/nammatham",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}
