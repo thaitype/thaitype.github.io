@@ -28,7 +28,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "docusaurus build"
+          "docusaurus build && mv build ../../dist/apps/nammatham"
         ],
         "parallel": false,
         "cwd": "apps/nammatham"
