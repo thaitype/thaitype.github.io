@@ -24,11 +24,20 @@
         "cwd": "apps/nammatham"
       }
     },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "swa deploy ./dist/apps/nammatham --env production -n doc-nammatham"
+        ],
+        "parallel": false
+      }
+    },
     "build": {
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "docusaurus build && mv build ../../dist/apps/nammatham"
+          "docusaurus build && mkdir -p ../../dist/apps &&  mv build ../../dist/apps/nammatham"
         ],
         "parallel": false,
         "cwd": "apps/nammatham"
@@ -39,16 +48,6 @@
       "options": {
         "commands": [
           "docusaurus swizzle"
-        ],
-        "parallel": false,
-        "cwd": "apps/nammatham"
-      }
-    },
-    "deploy": {
-      "executor": "nx:run-commands",
-      "options": {
-        "commands": [
-          "docusaurus deploy"
         ],
         "parallel": false,
         "cwd": "apps/nammatham"

@@ -24,6 +24,7 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@azure/static-web-apps-cli": "^1.1.7",
     "@docusaurus/module-type-aliases": "3.3.2",
     "@docusaurus/tsconfig": "3.3.2",
     "@docusaurus/types": "3.3.2",
