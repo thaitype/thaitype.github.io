@@ -3,6 +3,17 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/nammatham",
   "projectType": "application",
-  "targets": {},
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+          "commands": [
+            "docusaurus start"
+          ],
+          "parallel": false,
+          "cwd": "apps/nammatham"
+      }
+    }
+  },
   "tags": []
 }
