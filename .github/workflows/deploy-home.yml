@@ -1,0 +1,42 @@
+name: Deploy Home Site
+
+on: [push]
+
+permissions:
+  contents: write
+
+env:
+  pnpm_version: 8
+  node_version: 20
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ env.node_version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.node_version }}
+
+      - uses: pnpm/action-setup@v3
+        name: Install pnpm
+        with:
+          version: ${{ env.pnpm_version }}
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm exec nx run home:build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist/apps/home/.next # The folder the action should deploy.

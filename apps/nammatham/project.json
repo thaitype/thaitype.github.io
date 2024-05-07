@@ -4,14 +4,104 @@
   "sourceRoot": "apps/nammatham",
   "projectType": "application",
   "targets": {
+    "docusaurus": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docusaurus"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
     "dev": {
       "executor": "nx:run-commands",
       "options": {
-          "commands": [
-            "docusaurus start"
-          ],
-          "parallel": false,
-          "cwd": "apps/nammatham"
+        "commands": [
+          "docusaurus start"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docusaurus build"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
+    "swizzle": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docusaurus swizzle"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docusaurus deploy"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
+    "clear": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docusaurus clear"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docusaurus serve"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
+    "write-translations": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docusaurus write-translations"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
+    "write-heading-ids": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docusaurus write-heading-ids"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "tsc"
+        ],
+        "parallel": false,
+        "cwd": "apps/nammatham"
       }
     }
   },

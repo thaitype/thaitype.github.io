@@ -37,12 +37,6 @@
         }
       }
     },
-    "export": {
-      "executor": "@nx/next:export",
-      "options": {
-        "buildTarget": "home:build:production"
-      }
-    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
