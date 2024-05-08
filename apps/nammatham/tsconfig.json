@@ -1,7 +1,19 @@
 {
   // This file is not used in compilation. It is here just for a nice editor experience.
   "extends": "../../tsconfig.base.json",
+
   "compilerOptions": {
     // "baseUrl": "."
+    "jsx": "preserve",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "types": ["jest", "node"]
   }
 }
