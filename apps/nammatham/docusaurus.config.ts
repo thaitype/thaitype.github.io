@@ -60,8 +60,8 @@ const config: Config = {
     navbar: {
       title: 'Nammatham',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Nammatham Logo',
+        src: 'https://i.ibb.co/QmTh7x4/Nammatham-Logo-v2.png',
       },
       items: [
         {
@@ -71,6 +71,12 @@ const config: Config = {
           label: 'Docs',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          type: 'docsVersionDropdown',
+          // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+          // dropdownActiveClassDisabled: true,
+          position: 'right',
+        },
         {
           href: 'https://github.com/thaitype/nammatham',
           label: 'GitHub',
