@@ -44,7 +44,7 @@ npm install nammatham@alpha
 
 ### Example
 
-You can see [examples](examples) or follow the minimal app getting started below:
+You can see [examples](https://github.com/thaitype/nammatham/tree/main/examples) or follow the minimal app getting started below:
 
 > `initNammatham.create()` is a factory function for creating Nammatham App, it's a wrapper for Azure Functions App.
 
@@ -111,10 +111,10 @@ npm start
 - [express][@nammatham/express], Express Plugin for run server. Nammatham itself doesn't contain any server, enabling this plugin to provide better DX than the original server e.g. Azure Functions Runtime
 - [trpc-azure-functions][@nammatham/trpc-azure-functions], provide [tRPC](https://trpc.io/) Plugin for Azure Functions, inclduing [express][@nammatham/express] server for local testing.
 
-[@nammatham/core]: packages/core
-[@nammatham/azure-functions]: packages/azure-functions
-[@nammatham/express]: packages/express
-[@nammatham/trpc-azure-functions]: packages/trpc-azure-functions
+[@nammatham/core]: https://github.com/thaitype/nammatham/tree/main/packages/core
+[@nammatham/azure-functions]: https://github.com/thaitype/nammatham/tree/mainpackages/azure-functions
+[@nammatham/express]: https://github.com/thaitype/nammatham/tree/mainpackages/express
+[@nammatham/trpc-azure-functions]: https://github.com/thaitype/nammatham/tree/mainpackages/trpc-azure-functions
 
 
 ## Talks 
