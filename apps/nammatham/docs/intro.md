@@ -63,10 +63,11 @@ export class UserFunction extends BaseFunction {
   - Cosmos DB, support both [v2](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger?tabs=in-process%2Cfunctionsv2&pivots=programming-language-javascript#configuration) and [v4](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger?tabs=in-process%2Cextensionv4&pivots=programming-language-javascript#configuration).
   - Blob
   - Service Bus
-  - If your binding type isn't in the list, please use [custom type](docs/define-azure-function.md#custom-binding)
-  - You can see [All available type support](docs/binding-type.md) or create a PR ;).
+ - If your binding type isn't in the list, please use [custom type](./concept/define-azure-function.md#custom-binding)
+ - You can see [All available type support](./concept/binding-type) or create a PR ;).
 - Support TypeScript and [InversifyJS](https://github.com/inversify/Inversify) as the [Most Popular Inversion of Control Container and Dependency Injection Approach](https://npmtrends.com/awilix-vs-bottlejs-vs-inversify-vs-node-dependency-injection-vs-tsyringe-vs-typedi-vs-typescript-ioc) 
 - Build Tool Agnostic, this framework just provide the library. It can work with all TypeScript build tool e.g. tsc, esbuild, etc.
+
 
 ## Installation
 You can install nammatham using npm:
@@ -83,7 +84,7 @@ For the [InversifyJS](https://github.com/inversify/InversifyJS#-installation), p
 
 ## Getting Started
 
-Full examples please, go to [examples](examples) directory
+Full examples please, go to [examples](https://github.com/thaitype/nammatham/tree/v1.x/examples) directory
 
 ### 1. Basic
 
@@ -242,10 +243,6 @@ builder.build();
 
 export default builder.getApp();
 ```
-
-## Documentation
-
-Please read the [full documentation in the repo](docs)
 
 ## Inspiration 
 - [Azure Functions .NET](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-csharp?tabs=azure-cli%2Cin-process)

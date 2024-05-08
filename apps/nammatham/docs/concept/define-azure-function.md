@@ -111,9 +111,9 @@ const { req } = this.context.bindings;
 
 However, the `@azure/functions` doesn't provide any type binding based on `function.json`.
 
-In case you want custom type for binding, please read the section [Custom Binding](define-azure-function.md#custom-binding)
+In case you want custom type for binding, please read the section [Custom Binding](./define-azure-function.md#custom-binding)
 
-# Custom Binding
+## Custom Binding
 
 In `@functionName` decorator support any JSON Binding Object that you can self-define it.
 

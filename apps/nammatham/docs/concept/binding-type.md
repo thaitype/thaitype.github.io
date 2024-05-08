@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 # All Built-in Binding Type
 
-You can see all built-in binding type in [test case](packages/core/src/test-usecases/all-bindings/fixtures/functions/all-bindings.function.ts) as shown below:
+You can see all built-in binding type in [test case](https://github.com/thaitype/nammatham/blob/v1.x/packages/core/src/test-usecases/all-bindings/fixtures/functions/all-bindings.function.ts) as shown below:
 
 ```ts
 import { BaseFunction, binding, functionName } from '../../../../main';
