@@ -2,22 +2,38 @@
 sidebar_position: 1
 ---
 
+:::warning
+
+This is documentation for Nammatham 1.x, which is no longer actively maintained.
+
+For up-to-date documentation, see the [latest version](https://github.com/thaitype/nammatham/blob/main/README.md) (2.x).
+
+:::
+
+<!-- For up-to-date documentation, see the latest version (2.x). -->
+
+<p align="center">
+  <a href="http://thadaw.com/" target="blank"><img src="https://i.ibb.co/QmTh7x4/Nammatham-Logo-v2.png" width="120" alt="Nammatham Logo" /></a>
+</p>
+
 # Introduction
 
 Azure Function Lightweight frameworks with DI, providing type safe function triggers and bindings
 
+[![Build & Test](https://github.com/thaitype/nammatham/actions/workflows/test.yml/badge.svg)](https://github.com/thaitype/nammatham/actions/workflows/test.yml?branch=v1.x) [![codecov](https://codecov.io/gh/thaitype/nammatham/branch/main/graph/badge.svg?token=Y7ZMDKFPAN)](https://codecov.io/gh/thaitype/nammatham) [![npm version](https://img.shields.io/npm/v/nammatham)](https://www.npmjs.com/package/nammatham) [![npm download](https://img.shields.io/npm/dt/nammatham)](https://www.npmjs.com/package/nammatham)
 
-| Version | Status      | Azure Functions Node.js | branch |
-| ------- | ----------- | ----------------------- | ------ |
-| v1.x    | Maintenance | v3.x                    | v1.x   |
-| v2.x    | Alpha       | v4.x                    | main   |
 
-> **Nammatham** v1 is stable now (I've currently used in production), due to Nammatham v1 is based on Azure Functions Node.js v3.5.x. Azure will release Azure Functions Node.js v4 in GA (General availability) soon, [See in Roadmap 2023](https://github.com/Azure/azure-functions-nodejs-library/wiki/Roadmap)
+| Version | Status      | Azure Functions Node.js Lib | Branch       | Build Status                                                                                                                                                                                                                                                                                                                       |
+| ------- | ----------- | ------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| v1.x    | Maintenance | v3.x                            | [v1.x][v1.x] | [![Build & Test](https://github.com/thaitype/nammatham/actions/workflows/test.yml/badge.svg?branch=v1.x)](https://github.com/thaitype/nammatham/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/thaitype/nammatham/branch/v1.x/graph/badge.svg?token=Y7ZMDKFPAN)](https://codecov.io/gh/thaitype/nammatham)          |
+| v2.x    | Alpha       | v4.x                            | [main][main] | [![Build & Test](https://github.com/thaitype/nammatham/actions/workflows/test.yml/badge.svg?branch=main.unittest)](https://github.com/thaitype/nammatham/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/thaitype/nammatham/branch/main/graph/badge.svg?token=Y7ZMDKFPAN)](https://codecov.io/gh/thaitype/nammatham) |
+
+[v1.x]: https://github.com/thaitype/nammatham/tree/v1.x
+[main]: https://github.com/thaitype/nammatham/tree/main
+
+> Please note that Nammatham v2 is currently in its Alpha stage and is intended for internal use only. As we actively develop and refine the platform, be aware that the API may undergo frequent changes. [Tracking v2 Roadmap](https://github.com/thaitype/nammatham/issues?q=is%3Aissue+is%3Aopen+label%3Av2-blocker)
 > 
-> **Nammatham** v2 is [currently in development](https://github.com/thaitype/nammatham/issues/77), it will based on Azure Functions Node.js v4. [Tracking issue Nammatham supported with v4](https://github.com/thaitype/nammatham/issues?q=is%3Aissue+is%3Aopen+label%3Afunc-v4)
->
-
-
+> Note: [Nammatham v1](https://www.npmjs.com/package/nammatham) is currently in maintenance mode. no new features are actively being developed
 
 ## Description
 Nammatham (นามธรรม in Thai, pronounced `/naam ma tham/`, means **abstract** in Thai) is Azure Function Nodejs Lightweight framework with Dependency Injection. Provide type safety wrapping `function.json`

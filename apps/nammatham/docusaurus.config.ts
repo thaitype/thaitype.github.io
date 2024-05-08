@@ -38,14 +38,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/thaitype/thaitype.github.io/tree/main/apps/nammatham/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/thaitype/thaitype.github.io/tree/main/apps/nammatham/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -72,7 +72,7 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/thaitype/nammatham',
           label: 'GitHub',
           position: 'right',
         },
@@ -116,7 +116,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/thaitype/nammatham',
             },
           ],
         },
