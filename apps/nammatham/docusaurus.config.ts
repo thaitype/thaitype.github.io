@@ -72,14 +72,19 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
+          label: 'Discussions',
+          href: 'https://github.com/thaitype/nammatham/discussions',
+          position: 'left',
+        },
+        {
           type: 'docsVersionDropdown',
           // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
           // dropdownActiveClassDisabled: true,
           position: 'right',
         },
         {
-          href: 'https://github.com/thaitype/nammatham',
           label: 'GitHub',
+          href: 'https://github.com/thaitype/nammatham',
           position: 'right',
         },
       ],

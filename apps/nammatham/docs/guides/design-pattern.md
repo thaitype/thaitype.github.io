@@ -1,5 +1,5 @@
 ---
 sidebar_position: 1
 ---
-# Motivation
+# Design Pattern
 
