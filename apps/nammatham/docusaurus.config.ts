@@ -72,6 +72,12 @@ const config: Config = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
+          type: 'docsVersionDropdown',
+          // dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+          // dropdownActiveClassDisabled: true,
+          position: 'right',
+        },
+        {
           href: 'https://github.com/thaitype/nammatham',
           label: 'GitHub',
           position: 'right',
